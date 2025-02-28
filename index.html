@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Attendance - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Corporate Attendance System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="register.html">User Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>Discipline in the Workplace</h2>
+        <p>Discipline is the bridge between goals and accomplishment. A disciplined workforce is the foundation of a productive and efficient workplace.</p>
+        <p>Maintaining discipline ensures accountability, punctuality, and professionalism, leading to a positive work environment.</p>
+    </section>
+
+    <section class="quote">
+        <h2>Motivational Quote</h2>
+        <p id="quote"></p>
+    </section>
+
+    <script>
+        const quotes = [
+            "Success is not the key to happiness. Happiness is the key to success.",
+            "Discipline is choosing between what you want now and what you want most.",
+            "Your attitude, not your aptitude, will determine your altitude.",
+            "The only way to do great work is to love what you do."
+        ];
+        
+        document.getElementById("quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+    </script>
+</body>
+</html>
